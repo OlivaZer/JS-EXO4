@@ -49,6 +49,18 @@
             }
         }
 
+        // Écouteur d'événements qui détecte les pression des touches du clavier et exécute la fonction approprié ( soit ArrowDow pour la flêche vers le bas qui va créer un carré ) soit (ArrowUp pour celle du haut qui va supprimer le dernier carré)
+        document.addEventListener("keydown", function(event) {
+            // Si la touche pressée est la flèche vers le bas ("ArrowDown") :
+            if (event.key === "ArrowDown") {
+                // Appelle la fonction pour créer un carré lorsqu'on appuie sur la flèche du bas
+                createSquare();
+            // Sinon, si la touche pressée est la flèche vers le haut ("ArrowUp")
+            } else if (event.key === "ArrowUp") {
+                // Appelle la fonction pour supprimer un carré lorsqu'on appuie sur la flèche du haut
+                removeSquare();
+            }
+        });
         
     </script>
 
