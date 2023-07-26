@@ -38,7 +38,18 @@
             document.getElementById("container").appendChild(newSquare);
         }
 
-       
+        // Fonction pour supprimer le dernier carré du conteneur
+        function removeSquare() {
+            // Récupère le conteneur
+            const container = document.getElementById("container");
+            // Vérifie s'il y a des carrés à supprimer
+            if (container.children.length > 0) {
+                // Supprime le dernier carré
+                container.removeChild(container.lastChild);
+            }
+        }
+
+        
     </script>
 
 </body>
