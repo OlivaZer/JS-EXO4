@@ -23,6 +23,22 @@
             return color;
         }
 
+        // Fonction pour créer un carré et l'ajouter au conteneur
+        function createSquare() {
+
+            // Obtient une couleur aléatoire
+            const randomColor = getRandomColor();
+            // Crée un nouvel élément "div"
+            const newSquare = document.createElement("div");
+            // Ajoute la classe "square" au nouvel élément
+            newSquare.classList.add("square");
+            // Applique la couleur aléatoire au fond du carré
+            newSquare.style.backgroundColor = randomColor;
+            // Ajoute le carré au conteneur
+            document.getElementById("container").appendChild(newSquare);
+        }
+
+       
     </script>
 
 </body>
