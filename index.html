@@ -64,6 +64,17 @@
 
         //******************************************Bonus **************************************///
 
+        function changeSquareColor(event) {
+            // Vérifie si l'élément cliqué est un carré avec la classe "square"
+            if (event.target.classList.contains("square")) {
+                // Change la couleur du carré en noir
+                event.target.style.backgroundColor = "#000"; // #000 représente la couleur noire
+            }
+        }
+
+        // Ajoute un écouteur d'événements pour le conteneur qui détecte les clics de l'utilisateur
+        document.getElementById("container").addEventListener("click", changeSquareColor);
+        
 
         
 
